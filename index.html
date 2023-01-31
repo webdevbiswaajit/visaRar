@@ -1,0 +1,793 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===Google-font=== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- ===Google-font=== -->
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/coustom.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-lightBlue py-2">
+            <div class="container mx-auto">
+                <div class="px-2 flex justify-between items-center">
+                    <div class="lg:flex items-center">
+                        <div class="flex items-center mr-3">
+                            <div class="">
+                                <p class=" text-lg   text-white mt-1 md:mt-2 mr-2"><iconify-icon
+                                        icon="ri:mail-fill"></iconify-icon>
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="text-white text-xs md:text-base font-normal font-lato">
+                                    contact@somerianhealth.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="">
+                                <p class=" text-lg  text-white mt-1 mr-2"><iconify-icon
+                                        icon="logos:whatsapp-icon"></iconify-icon>
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="text-white text-xs md:text-base font-normal font-lato">+971 24 090 555
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" lg:flex  justify-end ">
+                        <div class="flex justify-end">
+                            <a class=" font-lato  font-medium text-white hover:text-highRed" href="./logInPortal.html">
+                                <div class=" flex items-center">
+                                    <div class="mt-1">
+                                        <iconify-icon icon="humbleicons:aid"></iconify-icon>
+                                    </div>
+                                    <div class="">
+                                        Patient Portal
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ml-3 flex justify-end">
+                            <a class=" font-lato  font-medium text-white hover:text-highRed" href="./careersLogin.html">
+                                <div class=" flex items-center">
+                                    <div class="mt-1">
+                                        <iconify-icon icon="mdi:user"></iconify-icon>
+                                    </div>
+                                    <div class="">
+                                        Careers
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================Nav-start================== -->
+    <nav>
+        <div class=" bg-highBlue py-2">
+            <div class="nav_black" id="myHeader">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-12 items-center menu_area ">
+                        <div class="col-span-12 lg:col-span-4">
+                            <div class=" flex justify-between">
+                                <div class="">
+                                    <a href="https://somerianhealth.com/" target="_blank"><img
+                                            class=" w-28 lg:w-56 lg:h-20" src="./img/white_logo.png" alt=""></a>
+                                </div>
+                                <div class=" lg:hidden dropdown_toggle">
+                                    <button class=" text-3xl text-white "><iconify-icon
+                                            icon="material-symbols:menu-rounded"></iconify-icon></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-8  ">
+                            <ul class=" lg:flex lg:justify-between hidden dropdown mobile_menu">
+                                <li><a class=" lg:text-lg  text-white  font-lato font-medium hover:text-highRed py-2 lg:py-0 "
+                                        href="index.html">Home</a>
+                                </li>
+                                <li><a class=" lg:text-lg  text-white   font-lato font-medium hover:text-highRed py-2 lg:py-0 "
+                                        href="aboutUs.html">About
+                                        Us</a>
+                                </li>
+                                <li><a class=" lg:text-lg  text-white   font-lato font-medium hover:text-highRed py-2 lg:py-0"
+                                        href="services.html">Services</a>
+                                </li>
+                                <li><a class=" lg:text-lg  text-white   font-lato font-medium hover:text-highRed py-2 lg:py-0"
+                                        href="doctor.html">Doctors</a>
+                                </li>
+                                <li><a class=" lg:text-lg  text-white   font-lato font-medium hover:text-highRed py-2 lg:py-0 "
+                                        id="patnar" href="careers.html">Careers</a>
+                                </li>
+                                <li><a class=" lg:text-lg  text-white   font-lato font-medium hover:text-highRed py-2 lg:py-0"
+                                        href="contact.html">Contact
+                                        Us</a></li>
+                                <div class="search">
+                                    <div class=" flex justify-end lg:justify-start">
+                                        <div
+                                            class=" bg-highRed w-10 h-10 flex justify-center items-center rounded-full py-2 lg:py-0">
+                                            <button class="px-6  py-3 text-white text-2xl mt-1 serch_btn"><iconify-icon
+                                                    icon="material-symbols:search-rounded"></iconify-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class=" search_input search_field hidden">
+                                        <form action="">
+                                            <div class=" flex items-center">
+                                                <div class="">
+                                                    <input
+                                                        class=" py-2 px-2  bg-highBlue text-white border border-white rounded focus:outline-none  serach_box"
+                                                        type="text" placeholder="Search Hear">
+                                                </div>
+                                                <div class=" ml-2">
+                                                    <button
+                                                        class=" bg-highRed py-2 px-3 text-white font-lato  border border-highRed rounded">Serach</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ==========================Nav-End================== -->
+
+    <!-- =====================Hero-area============= -->
+    <section>
+        <div class="hero_back py-20">
+            <div class="container mx-auto">
+                <div class=" mt-10">
+                    <h1 class=" text-white text-6xl font-bold text-center"><span id="typed"></span></h1>
+                </div>
+                <div class="grid grid-cols-4 gap-10  mt-40">
+                    <div class="box  flex justify-center items-center p-4">
+                        <div class="">
+                            <h2 class=" text-white text-xl text-center">Opening Hour</h2>
+                            <div class=" flex justify-center">
+                                <img src="./img/clock.png" alt="">
+                            </div>
+                            <p class=" text-white text-lg text-center">9.00 am To 6.00 pm</p>
+                        </div>
+                    </div>
+                    <div class="box  flex justify-center items-center p-4">
+                        <div class="">
+                            <h2 class=" text-white text-xl text-center">Book an Appointment</h2>
+                            <div class=" flex justify-center">
+                                <img src="./img/calender.png" alt="">
+                            </div>
+                            <p class=" text-white text-lg text-center">Phone: +971 25 754 222</p>
+                        </div>
+                    </div>
+                    <div class="box  flex justify-center items-center p-4">
+                        <div class="">
+                            <h2 class=" text-white text-xl text-center">Contact Us</h2>
+                            <div class=" flex justify-center">
+                                <img src="./img/call.png" alt="">
+                            </div>
+                            <p class=" text-white text-lg text-center">contact@somerianhealth.com</p>
+                        </div>
+                    </div>
+                    <div class="box  flex justify-center items-center p-4">
+                        <div class="">
+                            <h2 class=" text-white text-xl text-center">Collect Your Results</h2>
+                            <div class=" flex justify-center">
+                                <img src="./img/paper.png" alt="">
+                            </div>
+                            <p class=" text-white text-lg text-center">Check Result Hear</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================Hero-area============= -->
+
+    <!-- ======================Appoiment-Area start================ -->
+
+    <!-- =================Wave-Area========= -->
+    <section>
+        <div class="booking_form">
+            <div class=" py-10 ">
+                <div class="container mx-auto">
+                    <h2 class=" text-highBlue text-5xl font-semibold">Book In Appointment</h2>
+                    <div class="mt-10 bg-white py-5">
+                        <form action="">
+                            <div class="grid grid-cols-3 gap-10">
+                                <div class="w-full border border-highRed input_box">
+                                    <select
+                                        class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                        name="" id="">
+                                        <option value=""> Hospital 01</option>
+                                        <option value=""> Hospital 02</option>
+                                        <option value=""> Hospital 03</option>
+                                        <option value=""> Hospital 04</option>
+                                    </select>
+                                    <div class="input-icon">
+                                        <p class=" text-highBlue text-5xl"><iconify-icon
+                                                icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                    </div>
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <select
+                                        class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                        name="" id="">
+                                        <option value="">Select Your Facility</option>
+                                        <option value=""> Facility 01</option>
+                                        <option value=""> Facility 02</option>
+                                        <option value=""> Facility 03</option>
+                                    </select>
+                                    <div class="input-icon">
+                                        <p class=" text-highBlue text-5xl"><iconify-icon
+                                                icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                    </div>
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <select
+                                        class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                        name="" id="">
+                                        <option value="">Select Your Location</option>
+                                        <option value=""> Mafraq</option>
+                                        <option value="">Musaffah</option>
+                                    </select>
+                                    <div class="input-icon">
+                                        <p class=" text-highBlue text-5xl"><iconify-icon
+                                                icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                    </div>
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <input
+                                        class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                        type="text" placeholder="First Name">
+                                    <div class="input-icon_small">
+                                        <p class=" text-highBlue text-2xl pr-2"><iconify-icon
+                                                icon="material-symbols:drive-file-rename-outline-rounded"></iconify-icon>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <input
+                                        class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                        type="text" placeholder="Last Name">
+                                    <div class="input-icon_small">
+                                        <p class=" text-highBlue text-2xl pr-2"><iconify-icon
+                                                icon="material-symbols:drive-file-rename-outline-rounded"></iconify-icon>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <input
+                                        class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg  "
+                                        type="text" placeholder="Birth Date" id="date">
+                                    <div class="input-icon_small">
+                                        <p class=" text-highBlue text-2xl pr-2"><iconify-icon
+                                                icon="gg:calendar-dates"></iconify-icon>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <select
+                                        class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                        name="" id="">
+                                        <option value="">Gender</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                    <div class="input-icon">
+                                        <p class=" text-highBlue text-5xl"><iconify-icon
+                                                icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                    </div>
+
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <input
+                                        class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                        type="tel" placeholder="Phone Number"
+                                        onkeypress="return /[0-9]/i.test(event.key)"
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{5}">
+                                    <div class="input-icon_small">
+                                        <p class=" text-highBlue text-2xl pr-1"><iconify-icon
+                                                icon="ic:baseline-phone-android"></iconify-icon></p>
+                                    </div>
+
+                                </div>
+                                <div class="w-full border border-highRed input_box">
+                                    <input
+                                        class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                        type="email" placeholder="Email">
+                                    <div class="input-icon_small">
+                                        <p class=" text-highBlue text-2xl pr-2"><iconify-icon
+                                                icon="material-symbols:mail-rounded"></iconify-icon></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="w-full border border-highRed input_box mt-6 z-50 bg-white">
+                        <select
+                            class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                            id="select_box">
+                            <option>Select a option</option>
+                            <option value="residency_visa_screening">Residency Visa Screening</option>
+                            <option value="occupational_health_screening">Occupational Health Screening</option>
+                            <option value="corporate_group_screening">Corporate Group Screening</option>
+                        </select>
+                        <div class="input-icon">
+                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                        </div>
+                        <div id="residency_visa_screening" class="hide py-5">
+                            <div class="px-5 mt-6">
+
+                                <div class="grid grid-cols-3 gap-10">
+
+
+                                    <div class="w-full border border-highRed input_box">
+                                        <input
+                                            class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                            type="text" placeholder="Address">
+                                        <div class="input-icon_small">
+                                            <p class=" text-highBlue text-2xl pr-2"><iconify-icon
+                                                    icon="tabler:address-book"></iconify-icon></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Select Your Emirate</option>
+                                            <option value="Abu Dhabi">Abu Dhabi</option>
+                                            <option value="Dubai">Dubai</option>
+                                            <option value="Sharjah">Sharjah</option>
+                                            <option value="Umm al-Qaiwain">Umm al-Qaiwain</option>
+                                            <option value="Fujairah">Fujairah</option>
+                                            <option value="Ajman">Ajman</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Select Location</option>
+                                            <option value="">Location</option>
+                                            <option value="">Location</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Package Options</option>
+                                            <option value="- Standard Screening – AED 250(48 hours)">- Standard
+                                                Screening – AED 250(48 hours)</option>
+                                            <option value="Second Choice- Fast-Track Screening – AED 350 (24 hours)">
+                                                Second Choice- Fast-Track Screening – AED 350 (24
+                                                hours)</option>
+                                            <option
+                                                value="- VIP Screening – AED 500 (Same day results if the screening is done before 11.30 am)">
+                                                - VIP Screening – AED 500 (Same day results if the screening is done
+                                                before 11.30 am)</option>
+                                        </select>
+
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Visa Application Type</option>
+                                            <option value="">New</option>
+                                            <option value="">Renewal</option>
+                                            <option value="">Typing Centre New</option>
+                                            <option value="">Typing Centre Renewal</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">
+                                                How did you hear about us?</option>
+                                            <option value="">Google Search</option>
+                                            <option value="">Company/ PRO</option>
+                                            <option value="">Events</option>
+                                            <option value="">Family/Friends/ Word of Mouth</option>
+                                            <option value="">Social Media</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class=" mt-5">
+                                    <h2 class=" text-lg text-lightBlue mb-4">Preferred Date And Time</h2>
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <div class="w-full border border-highRed cursor-pointer">
+                                            <input
+                                                class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg date"
+                                                type="date">
+                                        </div>
+                                        <div class="w-full border border-highRed cursor-pointer">
+                                            <input
+                                                class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                                type="time" placeholder="Preferred Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="occupational_health_screening" class="hide py-5">
+                            <div class="px-5 mt-6">
+                                <div class="grid grid-cols-3 gap-10">
+                                    <div class="w-full border border-highRed input_box">
+                                        <input
+                                            class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                            type="text" placeholder="Company Name">
+                                    </div>
+
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Select Location</option>
+                                            <option value="">Location</option>
+                                            <option value="">Location</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Type of Screening</option>
+                                            <option value="">Pre–employment</option>
+                                            <option value="">Presentt–employment</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class=" mt-5">
+                                    <h2 class=" text-lg text-lightBlue mb-4">Preferred Date And Time</h2>
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <div class="w-full border border-highRed cursor-pointer">
+                                            <input
+                                                class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg date"
+                                                type="date">
+                                        </div>
+                                        <div class="w-full border border-highRed cursor-pointer">
+                                            <input
+                                                class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                                type="time" placeholder="Preferred Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="corporate_group_screening" class="hide py-5">
+                            <div class="px-5 mt-6">
+                                <div class="grid grid-cols-3 gap-10">
+                                    <div class="w-full border border-highRed input_box">
+                                        <input
+                                            class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                            type="text" placeholder="Company Name">
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <input
+                                            class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                            type="number" placeholder="Number Of People">
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full border border-highRed input_box">
+                                        <select
+                                            class=" w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg cursor-pointer"
+                                            name="" id="">
+                                            <option value="">Type of Screening</option>
+                                            <option value="">Pre–employment</option>
+                                            <option value="">Presentt–employment</option>
+                                        </select>
+                                        <div class="input-icon">
+                                            <p class=" text-highBlue text-5xl"><iconify-icon
+                                                    icon="ic:twotone-arrow-drop-down"></iconify-icon></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class=" mt-5">
+                                    <h2 class=" text-lg text-lightBlue mb-4">Preferred Date And Time</h2>
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <div class="w-full border border-highRed cursor-pointer">
+                                            <input
+                                                class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg date"
+                                                type="date">
+                                        </div>
+                                        <div class="w-full border border-highRed cursor-pointer">
+                                            <input
+                                                class="w-full py-2  px-5 focus:outline-none appearance-none text-highBlue text-lg "
+                                                type="time" placeholder="Preferred Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" flex justify-center mt-5">
+                        <button class=" text-white bg-highRed py-3 px-5 rounded-md">Make Appointment</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="ocean">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- =================Wave-Area========= -->
+
+
+    <!-- =========================Tab Start====================== -->
+
+    <section>
+        <div class="py-10 mt-20">
+            <div class="container mx-auto">
+                <div class="tabs">
+                    <ul id="tabs-nav">
+                        <li><a href="#tab1">Residency Visa Screening</a></li>
+                        <li><a href="#tab2">Occupational Health Screening</a></li>
+                        <li><a href="#tab3">Corporate Group Screening</a></li>
+                        <li><a href="#tab4">Domestic Workers Health Screening</a></li>
+                    </ul> <!-- END tabs-nav -->
+                    <div id="tabs-content ">
+                        <div id="tab1" class="tab-content">
+                            <div class=" mt-10">
+                                <div class="grid grid-cols-2 gap-10 items-center">
+                                    <div class="tab_image" style="background-image: url('./img/tab-1.jpg');"></div>
+                                    <div class="">
+                                        <h2 class=" text-highBlue text-5xl font-semibold  ">Residency Visa
+                                            Screening</h2>
+                                        <p class=" text-highBlue text-lg text-justify mt-5">Sumerian Health Screening
+                                            Centre
+                                            also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.</p>
+                                        <div class=" flex justify-center mt-5">
+                                            <button class=" text-white bg-highRed py-3 px-5 rounded-md">Learn
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-content">
+                            <div class=" mt-10">
+                                <div class="grid grid-cols-2 gap-10 items-center">
+                                    <div class="tab_image" style="background-image: url('./img/tab-2.jpg');"></div>
+                                    <div class="">
+                                        <h2 class=" text-highBlue text-5xl font-semibold  ">Occupational Health
+                                            Screening
+                                        </h2>
+                                        <p class=" text-highBlue text-lg text-justify mt-5">Sumerian Health Screening
+                                            Centre
+                                            also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.</p>
+                                        <div class=" flex justify-center mt-5">
+                                            <button class=" text-white bg-highRed py-3 px-5 rounded-md">Learn
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-content">
+                            <div class=" mt-10">
+                                <div class="grid grid-cols-2 gap-10 items-center">
+                                    <div class="tab_image" style="background-image: url('./img/tab-3.jpg');"></div>
+                                    <div class="">
+                                        <h2 class=" text-highBlue text-5xl font-semibold  ">Corporate Group Screening
+                                        </h2>
+                                        <p class=" text-highBlue text-lg text-justify mt-5">Sumerian Health Screening
+                                            Centre
+                                            also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.</p>
+                                        <div class=" flex justify-center mt-5">
+                                            <button class=" text-white bg-highRed py-3 px-5 rounded-md">Learn
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab4" class="tab-content">
+                            <div class=" mt-10">
+                                <div class="grid grid-cols-2 gap-10 items-center">
+                                    <div class="tab_image" style="background-image: url('./img/tab-4.jpg');"></div>
+                                    <div class="">
+                                        <h2 class=" text-highBlue text-5xl font-semibold  ">Domestic Workers Health
+                                            Screening</h2>
+                                        <p class=" text-highBlue text-lg text-justify mt-5">Sumerian Health Screening
+                                            Centre
+                                            also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.Sumerian Health Screening Centre also provides
+                                            essential occupational health
+                                            services including medical tests for
+                                            employment in Abu Dhabi.</p>
+                                        <div class=" flex justify-center mt-5">
+                                            <button class=" text-white bg-highRed py-3 px-5 rounded-md">Learn
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- END tabs-content -->
+                </div> <!-- END tabs -->
+            </div>
+        </div>
+    </section>
+    <!-- =========================Tab end====================== -->
+
+    <!-- =================Check Certificate Status start=============== -->
+
+    <section>
+        <div class="py-20 mt-20 cirtificate" style="background-image: url('./img/cirtificate.jpg');">
+            <div class="container mx-auto">
+                <h2 class="text-white text-5xl font-bold text-center mb-10">Check Certificate Status</h2>
+                <div class=" w-1/2 mx-auto">
+                    <div class="">
+                        <form action="">
+                            <div class=" w-full flex items-center justify-center">
+                                <input
+                                    class=" bg-transparent focus:outline-none text-white text-xl border border-white w-11/12 py-3 px-10"
+                                    type="text" placeholder="Check Certificate Status">
+                                <div class="">
+                                    <button type="submit"
+                                        class=" text-white bg-highRed py-3 px-5 text-xl border border-highRed">
+                                        Check</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class=" mt-44"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =================Check Certificate Status End=============== -->
+
+
+
+
+
+    <!-- ===========iconfy============= -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <!-- ============Jquary=============== -->
+    <script src="./js/jquary.js"></script>
+    <!-- ==========Coustom js============== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+    <script src="./js/coustom.js"></script>
+    <script>
+
+        // Show the first tab and hide the rest
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.tab-content').hide();
+        $('.tab-content:first').show();
+
+        // Click function
+        $('#tabs-nav li').click(function () {
+            $('#tabs-nav li').removeClass('active');
+            $(this).addClass('active');
+            $('.tab-content').hide();
+
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+        });
+
+
+    </script>
+</body>
+
+</html>
